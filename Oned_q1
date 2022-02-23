@@ -2,6 +2,7 @@
 int main()
 {
 int arr[1];
+printf("Enter value");
 scanf("%d",&arr[0]);
-print("%d",arr[0]);
+printf("Array = %d",arr[0]);
 }
