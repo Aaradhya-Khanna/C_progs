@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+printf("Enter number of elements to be inputted");
+int i;
+scanf("%d",&i);
+int arr[i];
+for(int j=0;j<i;j++)
+{
+    scanf("%d",&arr[j]);
+}
+for(int j=0;j<i;j++)
+{
+    printf("Values %d",arr[j]);
+    printf("");
+}
+}
