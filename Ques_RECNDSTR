@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[1000000];
+    int t=0;
+    scanf("%d",&t);
+    for(int i=1;i<=t;i++)
+    {
+        scanf("%s",&str);
+        int len=0;
+        for(int j=0;str[j]!='\0';j++)
+        {
+            len=j;
+        }
+        int d=1;
+         char str1[1000000]="";
+        for(int j=1;j<=len;j++)
+        {
+            char ch=str[j];
+            strncat(str1,&ch,d);
+            d++;
+        }
+        char ch1=str[0];
+        strncat(str1,&ch1,d);
+        d=1;
+        
+        char str2[1000000]="";
+        strncat(str2,&str[len],d);
+        d++;
+        for(int j=0;j<=len-1;j++)
+        {
+            char ch=str[j];
+            strncat(str2,&ch,d);
+            d++;
+        }
+     
+        if(strcmp(str1,str2)==0)
+        {
+            printf("YES");
+        }
+        else
+        {
+            printf("NO");
+        }
+    }
+}
